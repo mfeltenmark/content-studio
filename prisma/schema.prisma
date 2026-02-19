@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Draft {
+  id              String    @id @default(cuid())
+  title           String
+  originalImage   String?
+  originalAudio   String?
+  imageAnalysis   String?
+  generatedText   String
+  platform        String
+  status          String    @default("draft")
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  @@index([status])
+  @@index([platform])
+}
+
+model Template {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  category    String
+  platform    String
+  structure   String
+  example     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([category])
+  @@index([platform])
+}
+
+model LinkedInAuth {
+  id           String   @id @default(cuid())
+  userId       String   @unique
+  accessToken  String
+  expiresAt    DateTime
+  refreshToken String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

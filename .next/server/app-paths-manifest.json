@@ -1,0 +1,6 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/card/page": "app/admin/card/page.js",
+  "/api/card/views/route": "app/api/card/views/route.js",
+  "/card/page": "app/card/page.js"
+}
