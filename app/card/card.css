@@ -8,11 +8,11 @@ html, body { background: #f4f1f9; min-height: 100vh; font-family: 'DM Mono', mon
 .card { width: 100%; max-width: 400px; background: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 4px 24px rgba(94,58,140,0.12), 0 1px 4px rgba(94,58,140,0.06); opacity: 0; transform: translateY(16px); animation: fadeUp 0.5s cubic-bezier(0.22,1,0.36,1) forwards; }
 @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
-.card-header { background: linear-gradient(135deg, #5e3a8c 0%, #7c52a8 100%); padding: 24px 28px; position: relative; overflow: hidden; display: flex; align-items: center; gap: 20px; }
+.card-header { background: linear-gradient(135deg, #5e3a8c 0%, #7c52a8 100%); padding: 18px 24px; position: relative; overflow: hidden; display: flex; align-items: center; gap: 16px; }
 .card-header::after { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; border-radius: 50%; background: rgba(255,255,255,0.06); }
 
 .photo-wrap { flex-shrink: 0; margin-bottom: 0; }
-.photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.4); box-shadow: 0 2px 12px rgba(0,0,0,0.15); position: relative; z-index: 1; }
+.photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.4); box-shadow: 0 2px 12px rgba(0,0,0,0.15); position: relative; z-index: 1; }
 
 .header-text { display: flex; flex-direction: column; position: relative; z-index: 1; }
 
@@ -20,13 +20,13 @@ html, body { background: #f4f1f9; min-height: 100vh; font-family: 'DM Mono', mon
 .title { font-family: 'DM Mono', monospace; font-size: 0.8rem; color: rgba(255,255,255,0.75); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 6px; position: relative; z-index: 1; }
 .company { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 2px; position: relative; z-index: 1; }
 
-.card-body { padding: 24px 28px 28px; }
+.card-body { padding: 18px 24px 22px; }
 
-.slogan { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.0625rem; color: #7c52a8; line-height: 1.5; margin-bottom: 24px; padding-left: 12px; border-left: 2px solid #d4b8f0; }
+.slogan { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.0625rem; color: #7c52a8; line-height: 1.5; margin-bottom: 14px; padding-left: 12px; border-left: 2px solid #d4b8f0; }
 
-.contacts { display: flex; flex-direction: column; gap: 0; margin-bottom: 24px; border: 1px solid #ede8f5; border-radius: 14px; overflow: hidden; }
+.contacts { display: flex; flex-direction: column; gap: 0; margin-bottom: 14px; border: 1px solid #ede8f5; border-radius: 14px; overflow: hidden; }
 
-.contact-row { display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 14px 16px; background: #fff; border-bottom: 1px solid #ede8f5; transition: background 0.15s; }
+.contact-row { display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 11px 16px; background: #fff; border-bottom: 1px solid #ede8f5; transition: background 0.15s; }
 .contact-row:last-child { border-bottom: none; }
 .contact-row:hover { background: #f9f6fd; }
 
@@ -35,9 +35,9 @@ html, body { background: #f4f1f9; min-height: 100vh; font-family: 'DM Mono', mon
 
 .contact-text { font-family: 'DM Mono', monospace; font-size: 1rem; color: #2d1f42; }
 
-.qr-section { display: flex; justify-content: center; margin-bottom: 20px; }
-.qr-wrap { padding: 12px; background: #f9f6fd; border-radius: 14px; border: 1px solid #ede8f5; }
-.qr-wrap img { display: block; width: 140px; height: 140px; }
+.qr-section { display: flex; justify-content: center; margin-bottom: 14px; }
+.qr-wrap { padding: 10px; background: #f9f6fd; border-radius: 14px; border: 1px solid #ede8f5; }
+.qr-wrap img { display: block; width: 120px; height: 120px; }
 
 .actions { display: flex; gap: 10px; }
 

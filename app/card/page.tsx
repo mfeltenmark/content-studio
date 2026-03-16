@@ -8,7 +8,7 @@ const CARD_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://din-app.vercel.app
 const CONTACT = {
   name: 'Mikael Feltenmark',
   title: 'Chief Priority Officer',
-  company: 'Tech & Change by Feltenmark AB',
+  company: 'Tech & Change by Feltenmark\u00A0AB',
   slogan: 'When everything is priority, nothing gets done.',
   phone: '+46 73 73 68 532',
   email: 'mikael@techchange.io',
