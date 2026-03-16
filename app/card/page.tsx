@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import QRCode from 'qrcode'
 import './card.css'
 
 const CARD_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://din-app.vercel.app') + '/card'
@@ -32,18 +31,12 @@ function downloadVCard() {
 }
 
 export default function CardPage() {
-  const [qrDataUrl, setQrDataUrl] = useState('')
   const [showForm, setShowForm] = useState(false)
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', note: '' })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    QRCode.toDataURL(CARD_URL, {
-      width: 160,
-      margin: 1,
-      color: { dark: '#5e3a8c', light: '#ffffff' },
-    }).then(setQrDataUrl)
     fetch('/api/card/views', { method: 'POST' }).catch(() => {})
   }, [])
 
@@ -103,7 +96,7 @@ export default function CardPage() {
 
             <div className="qr-section">
               <div className="qr-wrap">
-                {qrDataUrl && <img src={qrDataUrl} alt="QR" />}
+                <img src="/qr-code.png" alt="QR" />
               </div>
             </div>
 
